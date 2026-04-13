@@ -1,0 +1,121 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #eaf2ff, #f6f9ff);
+    color: #1f2a44;
+}
+
+/* HEADER */
+.hero {
+    background: linear-gradient(135deg, #132a5c, #1e4ed8);
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.2);
+}
+
+.menu {
+    margin-top: 25px;
+}
+
+.menu a {
+    display: inline-block;
+    margin: 8px;
+    padding: 10px 16px;
+    border-radius: 999px;
+    background-color: rgba(255, 255, 255, 0.15);
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    background-color: white;
+    color: #1e4ed8;
+    transform: translateY(-2px);
+}
+
+/* MAIN */
+.conteneur {
+    width: 85%;
+    max-width: 1100px;
+    margin: 40px auto;
+}
+
+/* CARTES */
+.carte {
+    background-color: white;
+    border-radius: 16px;
+    padding: 25px;
+    margin-bottom: 25px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+/* 🔥 EFFET DEMANDÉ PAR LE TP */
+.carte:hover {
+    transform: scale(1.02);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+}
+
+/* TITRES */
+h2 {
+    color: #16325c;
+}
+
+/* TEXTE */
+p {
+    line-height: 1.7;
+}
+
+/* LISTE */
+ul {
+    padding-left: 22px;
+}
+
+/* 🔥 LIENS PROPRES */
+a {
+    color: #1e4ed8;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #c0392b;
+    text-decoration: underline;
+}
+
+/* BOUTON */
+.bouton-lien {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #1e4ed8;
+    color: white;
+    border-radius: 8px;
+    box-shadow: 0 6px 14px rgba(30, 78, 216, 0.25);
+}
+
+.bouton-lien:hover {
+    background-color: #163bb5;
+    color: white;
+}
+
+/* IMAGE */
+img {
+    width: 100%;
+    max-width: 340px;
+    border-radius: 12px;
+    border: 2px solid #c7d4e6;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+}
+
+img:hover {
+    transform: scale(1.05);
+}
