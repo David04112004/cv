@@ -1,8 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
     let taches = [
-        { texte: "Terminer le TP5", faite: false },
-        { texte: "Tester l’ajout d’une tâche", faite: false },
-        { texte: "Vérifier la recherche", faite: false }
+        { texte: "valider prepa", faite: false },
+       
     ];
 
     const inputTache = document.getElementById("inputTache");
