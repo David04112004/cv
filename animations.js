@@ -1,4 +1,4 @@
-// ANIMATION SCROLL
+// SCROLL ANIMATION
 function revealOnScroll() {
     const elements = document.querySelectorAll(".reveal");
 
@@ -15,12 +15,10 @@ function revealOnScroll() {
 window.addEventListener("scroll", revealOnScroll);
 window.addEventListener("load", revealOnScroll);
 
-// DARK MODE GLOBAL + SAUVEGARDE
-
+// DARK MODE GLOBAL
 function toggleDarkMode() {
     document.body.classList.toggle("dark-mode");
 
-    // sauvegarde
     if (document.body.classList.contains("dark-mode")) {
         localStorage.setItem("darkMode", "enabled");
     } else {
@@ -28,7 +26,6 @@ function toggleDarkMode() {
     }
 }
 
-// charger le mode au démarrage
 window.addEventListener("load", () => {
     if (localStorage.getItem("darkMode") === "enabled") {
         document.body.classList.add("dark-mode");
