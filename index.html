@@ -3,64 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mon univers numérique</title>
+    <title>Accueil - Mon univers numérique</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-    <header class="hero">
-        <div class="hero-content">
-            <p class="mini-titre">DAVID AZOULAY</p>
-            <h1>Mon univers numérique</h1>
-            <p class="sous-titre">
-                Étudiant en ingénierie à l’ECE Lyon –  spécialisé en transformation digitale et innovation
-            </p>
-        </div>
-    </header>
+<header class="hero">
+    <div class="dark-toggle" onclick="toggleDarkMode()">🌙</div>
+    <div class="hero-content">
+        <p class="mini-titre">DAVID AZOULAY</p>
+        <h1>Mon univers numérique</h1>
+        <p class="sous-titre">
+            Portfolio étudiant autour du numérique, de l’innovation et de mes projets.
+        </p>
+    </div>
+</header>
 
-    <nav class="menu-principal">
-        <a href="index.html" class="actif">Accueil</a>
-        <a href="apropos.html">À propos</a>
-        <a href="competences.html">Compétences</a>
-        <a href="projets.html">Projets</a>
-        <a href="contact.html">Contact</a>
-    </nav>
+<div class="burger" id="burger">
+    ☰
+</div>
 
-    <main class="conteneur">
-        <section class="carte">
-            <h2>Bienvenue</h2>
-            <p>
-                Bienvenue sur mon site personnel. Ce site me permet de présenter mon profil,
-                mes compétences et mes projets dans le domaine du numérique.
-            </p>
-            <p>
-                À travers cette réalisation, je mets en avant mon intérêt pour les nouvelles
-                technologies, le développement web et la transformation digitale.
-            </p>
-        </section>
+<nav class="menu-principal" id="menu">
+    <a href="index.html" class="actif">Accueil</a>
+    <a href="apropos.html">À propos</a>
+    <a href="competences.html">Compétences</a>
+    <a href="projets.html">Projets</a>
+    <a href="contact.html">Contact</a>
+    <a href="todo.html">TODO</a>
 
-        <section class="carte carte-image">
-            <div class="texte-image">
-                <h2>Mon univers</h2>
-                <p>
-                    Passionné par les nouvelles technologies, je m’intéresse à la manière dont
-                    le numérique transforme les entreprises et les usages.
-                </p>
-                <p>
-                    <a href="apropos.html" class="bouton-lien">Découvrir mon profil</a>
-                </p>
-            </div>
+</nav>
 
-            <a href="images/photo.jpg" target="_blank" class="image-link">
-                <img src="images/photo.jpg" alt="Illustration du numérique">
-            </a>
-        </section>
-    </main>
+<main class="conteneur">
+
+    <section class="carte reveal">
+        <h2>Bienvenue</h2>
+        <p>
+            Bienvenue sur mon site personnel. Vous y trouverez une présentation de mon parcours,
+            de mes compétences et des projets que j’ai réalisés au cours de ma formation.
+        </p>
+        <p>
+            Ce portfolio met en avant mon intérêt pour le développement web,
+            la transformation digitale et l’innovation.
+        </p>
+    </section>
+
+</main>
 
 <footer class="footer">
-    <p>© 2026 - BY David Azoulay </p>
-    
+    <p>© 2026 - David Azoulay</p>
 </footer>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="jquery.js"></script>
+<script src="animations.js"></script>
 
 </body>
 </html>

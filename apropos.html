@@ -8,53 +8,72 @@
 </head>
 <body>
 
-    <header class="hero">
-        <div class="hero-content">
-            <p class="mini-titre">DAVID AZOULAY</p>
-            <h1>À propos de moi</h1>
-            <p class="sous-titre">
-                Mon parcours, mes ambitions et ma motivation
-            </p>
-        </div>
-    </header>
+<header class="hero">
+    <div class="dark-toggle" onclick="toggleDarkMode()">🌙</div>
+    <div class="hero-content">
+        <p class="mini-titre">DAVID AZOULAY</p>
+        <h1>À propos de moi</h1>
+        <p class="sous-titre">
+            Mon parcours, mes ambitions et ma motivation
+        </p>
+    </div>
+</header>
 
-    <nav class="menu-principal">
-        <a href="index.html">Accueil</a>
-        <a href="apropos.html" class="actif">À propos</a>
-        <a href="competences.html">Compétences</a>
-        <a href="projets.html">Projets</a>
-        <a href="contact.html">Contact</a>
-    </nav>
+<div class="burger" id="burger">
+    ☰
+</div>
 
-    <main class="conteneur">
-        <section class="carte">
-            <h2>Mon profil</h2>
-            <p>
-                Actuellement étudiant en deuxième année de classe préparatoire intégrée à l’ECE Lyon,je me spécialiserai l’année prochaine en transformation digitale et innovation.
-                Passionné par les nouvelles technologies et leur impact sur les entreprises,je développe progressivement mes compétences en informatique et en développement web.
-            </p>
-            <p>
-                Curieux, rigoureux et très motivé, j’aime apprendre de nouvelles choses et relever des défis concrets. À travers mes projets, je cherche à acquérir des compétences
-                utiles et à comprendre les enjeux du numérique dans le monde professionnel.
-            </p>
-            <p>
-                Aujourd’hui, je suis à la recherche d’une alternance qui me permettra de mettre en pratique mes connaissances, de progresser rapidement et de m’investir dans des projets innovants.
-            </p>
-        </section>
+<nav class="menu-principal" id="menu">
+    <a href="index.html">Accueil</a>
+    <a href="apropos.html" class="actif">À propos</a>
+    <a href="competences.html">Compétences</a>
+    <a href="projets.html">Projets</a>
+    <a href="contact.html">Contact</a>
+    <a href="todo.html">TODO</a>
 
-        <section class="carte">
-            <h2>Ce que je recherche</h2>
-            <p>
-                Je recherche une alternance dans laquelle je pourrai m’investir pleinement,
-                apprendre au contact de professionnels et développer à la fois mes compétences
-                techniques et mes qualités humaines.
-            </p>
-        </section>
-    </main>
+    
+</nav>
 
-    <footer class="footer">
-        <p>© 2026 - BY David Azoulay</p>
-    </footer>
+<main class="conteneur">
+
+    <!-- AJOUT reveal ICI -->
+    <section class="carte reveal">
+        <h2>Mon profil</h2>
+        <p>
+            Actuellement étudiant en deuxième année de classe préparatoire intégrée à l’ECE Lyon,
+            je me spécialiserai l’année prochaine en transformation digitale et innovation.
+            Passionné par les nouvelles technologies et leur impact sur les entreprises,
+            je développe progressivement mes compétences en informatique et en développement web.
+        </p>
+        <p>
+            Curieux, rigoureux et très motivé, j’aime apprendre de nouvelles choses et relever des défis concrets.
+            À travers mes projets, je cherche à acquérir des compétences utiles et à comprendre les enjeux du numérique dans le monde professionnel.
+        </p>
+        <p>
+            Aujourd’hui, je suis à la recherche d’une alternance qui me permettra de mettre en pratique mes connaissances,
+            de progresser rapidement et de m’investir dans des projets innovants.
+        </p>
+    </section>
+
+    <!-- AJOUT reveal ICI -->
+    <section class="carte reveal">
+        <h2>Ce que je recherche</h2>
+        <p>
+            Je recherche une alternance dans laquelle je pourrai m’investir pleinement,
+            apprendre au contact de professionnels et développer à la fois mes compétences
+            techniques et mes qualités humaines.
+        </p>
+    </section>
+
+</main>
+
+<footer class="footer">
+    <p>© 2026 - BY David Azoulay</p>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="jquery.js"></script>
+<script src="animations.js"></script>
 
 </body>
 </html>

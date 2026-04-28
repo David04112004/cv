@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO List - Mon univers numérique</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="hero">
+    <div class="dark-toggle" onclick="toggleDarkMode()">🌙</div>
+    <div class="hero-content">
+        <p class="mini-titre">DAVID AZOULAY</p>
+        <h1>TODO List</h1>
+        <p class="sous-titre">Gestion de tâches en JavaScript</p>
+    </div>
+</header>
+
+<div class="burger" id="burger">
+    ☰
+</div>
+
+<nav class="menu-principal" id="menu">
+    <a href="index.html">Accueil</a>
+    <a href="apropos.html">À propos</a>
+    <a href="competences.html">Compétences</a>
+    <a href="projets.html">Projets</a>
+    <a href="contact.html">Contact</a>
+    <a href="todo.html" class="actif">TODO</a>
+
+</nav>
+
+<main class="conteneur">
+
+    <section class="carte carte-todo reveal">
+        <h2>Ma liste de tâches</h2>
+
+        <div class="zone-ajout">
+            <input type="text" id="inputTache" placeholder="Écrire une nouvelle tâche">
+            <button id="boutonAjouter" class="bouton-envoi">Ajouter</button>
+        </div>
+
+        <div class="zone-recherche">
+            <input type="text" id="recherche" placeholder="Rechercher une tâche...">
+        </div>
+
+        <table class="table-todo">
+            <thead>
+                <tr>
+                    <th>Fait</th>
+                    <th>Tâche</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="tableauTaches">
+            </tbody>
+        </table>
+    </section>
+
+    <section class="carte reveal">
+        <button id="btnAccordeon" class="bouton-accordeon">
+            Afficher / Masquer l’explication
+        </button>
+
+        <div id="contenuAccordeon" class="contenu-accordeon">
+            <p>
+                Cette page utilise JavaScript pour ajouter, afficher, cocher, rechercher
+                et supprimer des tâches. L’accordéon est réalisé avec jQuery.
+            </p>
+        </div>
+    </section>
+
+</main>
+
+<footer class="footer">
+    <p>© 2026 - David Azoulay</p>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="todo.js"></script>
+<script src="jquery.js"></script>
+<script src="animations.js"></script>
+
+</body>
+</html>
