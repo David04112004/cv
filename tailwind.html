@@ -1,3 +1,166 @@
-<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-<script src="todo.js"></script>
-<script src="jquery.js"></script>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Univers digital - David Azoulay</title>
+
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-slate-950 text-white">
+
+<!-- HEADER -->
+<header class="bg-gradient-to-br from-blue-900 via-blue-700 to-cyan-500 py-20 text-center">
+
+    <p class="uppercase tracking-[0.3em] text-sm text-blue-200 mb-4">
+        DAVID AZOULAY
+    </p>
+
+    <h1 class="text-4xl md:text-6xl font-bold mb-4">
+        Mon univers digital
+    </h1>
+
+    <p class="text-blue-100 text-lg max-w-2xl mx-auto">
+        Développement, innovation et projets techniques
+    </p>
+
+</header>
+
+<!-- MENU -->
+<nav class="sticky top-0 bg-white/10 backdrop-blur-md py-4">
+
+    <div class="max-w-6xl mx-auto flex flex-col sm:flex-row gap-3 justify-center">
+
+        <a href="index.html" class="px-5 py-2 rounded-full bg-white/10 hover:bg-blue-500 text-center">
+            Accueil
+        </a>
+
+        <a href="projets.html" class="px-5 py-2 rounded-full bg-white/10 hover:bg-blue-500 text-center">
+            Projets
+        </a>
+
+        <a href="todo.html" class="px-5 py-2 rounded-full bg-white/10 hover:bg-blue-500 text-center">
+            TODO
+        </a>
+
+        <a href="tailwind.html" class="px-5 py-2 rounded-full bg-blue-500 text-white text-center font-bold">
+            Tailwind
+        </a>
+
+    </div>
+
+</nav>
+
+<!-- CONTENU -->
+<main class="max-w-6xl mx-auto px-6 py-12">
+
+<!-- SECTION PROFIL -->
+<section class="mb-12">
+
+    <h2 class="text-3xl font-bold mb-4 text-cyan-400">
+        Qui suis-je ?
+    </h2>
+
+    <p class="text-slate-300 leading-8">
+        Étudiant en ingénierie à l’ECE Lyon, je me spécialise en transformation digitale et innovation.
+        Je développe des projets techniques mêlant programmation, électronique et développement web.
+    </p>
+
+</section>
+
+<!-- SECTION PROJETS -->
+<section class="mb-12">
+
+    <h2 class="text-3xl font-bold mb-6 text-cyan-600">
+        Mes projets
+    </h2>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+        <div class="bg-white text-black p-6 rounded-2xl shadow-xl hover:scale-105 transition">
+            <h3 class="text-xl font-bold mb-2">Deep Runner</h3>
+            <p>Jeu graphique avec animations et logique de déplacement.</p>
+        </div>
+
+        <div class="bg-white text-black p-6 rounded-2xl shadow-xl hover:scale-105 transition">
+            <h3 class="text-xl font-bold mb-2">DrawBot</h3>
+            <p>Robot capable de dessiner automatiquement.</p>
+        </div>
+
+        <div class="bg-white text-black p-6 rounded-2xl shadow-xl hover:scale-105 transition">
+            <h3 class="text-xl font-bold mb-2">Projet GPS</h3>
+            <p>Algorithmes de graphes pour calcul de trajets optimaux.</p>
+        </div>
+
+        <div class="bg-white text-black p-6 rounded-2xl shadow-xl hover:scale-105 transition">
+            <h3 class="text-xl font-bold mb-2">ECE HEROES</h3>
+            <p>Instrument de musique interactif via Arduino inspiré du jeu Piano Tiles.</p>
+        </div>
+
+        <div class="bg-white text-black p-6 rounded-2xl shadow-xl hover:scale-105 transition">
+            <h3 class="text-xl font-bold mb-2">SensorWake</h3>
+            <p>Création d’un réveil interactif utilisant un capteur à ultrasons avec Arduino.</p>
+        </div>
+
+        <div class="bg-white text-black p-6 rounded-2xl shadow-xl hover:scale-105 transition">
+            <h3 class="text-xl font-bold mb-2">Pac-Man</h3>
+            <p>Reproduction du jeu Pac-Man avec des blocs logiques sans programmation classique.</p>
+        </div>
+
+        <div class="bg-white text-black p-6 rounded-2xl shadow-xl hover:scale-105 transition">
+            <h3 class="text-xl font-bold mb-2">Site web dynamique</h3>
+            <p>Création d’un site web complet avec HTML, CSS, JavaScript et jQuery.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- SECTION COMPÉTENCES -->
+<section class="mb-12">
+
+    <h2 class="text-3xl font-bold mb-6 text-cyan-400">
+        Compétences
+    </h2>
+
+    <div class="flex flex-wrap gap-3">
+
+        <span class="bg-blue-600 px-4 py-2 rounded-full">HTML</span>
+        <span class="bg-blue-600 px-4 py-2 rounded-full">CSS</span>
+        <span class="bg-blue-600 px-4 py-2 rounded-full">JavaScript</span>
+        <span class="bg-blue-600 px-4 py-2 rounded-full">C</span>
+        <span class="bg-blue-600 px-4 py-2 rounded-full">Arduino</span>
+        <span class="bg-blue-600 px-4 py-2 rounded-full">C++</span>
+        <span class="bg-blue-600 px-4 py-2 rounded-full">SQL</span>
+        <span class="bg-blue-600 px-4 py-2 rounded-full">Arduino</span>
+        <span class="bg-blue-600 px-4 py-2 rounded-full">Python</span>
+
+    </div>
+
+</section>
+
+<!-- SECTION OBJECTIF -->
+<section>
+
+    <h2 class="text-3xl font-bold mb-4 text-cyan-400">
+        Objectif
+    </h2>
+
+    <p class="text-slate-300 leading-8">
+        Je recherche une alternance en transformation digitale afin de développer mes compétences
+        et participer à des projets innovants.
+    </p>
+
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="text-center py-6 bg-slate-900 text-slate-400">
+    <p>© 2026 - David Azoulay</p>
+</footer>
+
+</body>
+</html>

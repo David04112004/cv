@@ -23,6 +23,9 @@ $(document).ready(function () {
     $("#btnAccordeon").click(function () {
         $("#contenuAccordeon").slideToggle(300);
     });
+    
+    $("#arrow").toggleClass("rotate");
+
 
 });
 

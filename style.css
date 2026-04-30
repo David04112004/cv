@@ -379,3 +379,47 @@ h1 {
 #prev:hover, #next:hover {
     background: #3b82f6;
 }
+
+/* BOUTON PROJETS PREMIUM */
+
+.btn-projets {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 15px 20px;
+    width: 100%;
+    border: none;
+    border-radius: 15px;
+    background: linear-gradient(135deg, #1e4ed8, #3b82f6);
+    color: white;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+/* hover */
+.btn-projets:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+}
+
+/* clic */
+.btn-projets:active {
+    transform: scale(0.97);
+}
+
+/* DARK MODE */
+.dark-mode .btn-projets {
+    background: linear-gradient(135deg, #020617, #1e293b);
+}
+
+#arrow {
+    margin-left: auto;
+    transition: 0.3s;
+}
+
+.rotate {
+    transform: rotate(180deg);
+}
