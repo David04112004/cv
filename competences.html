@@ -1,26 +1,35 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
+    <!-- Encodage pour afficher correctement les accents -->
     <meta charset="UTF-8">
+
+    <!-- Responsive : adaptation mobile -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Titre de la page (onglet navigateur) -->
     <title>Compétences - Mon univers numérique</title>
+
+    <!-- Lien vers le CSS avec version pour éviter le cache -->
     <link rel="stylesheet" href="style.css?v=999">
 </head>
+
 <body>
 
+<!-- HEADER avec slider -->
 <header class="hero">
 
-    <!-- SLIDER -->
+    <!-- Images en arrière-plan (slider animé) -->
     <div class="slider">
-        <img src="bg1.jpg">
-        <img src="bg2.jpg">
-        <img src="bg3.jpg">
+        <img src="bg1.jpg" alt="Fond numérique 1">
+        <img src="bg2.jpg" alt="Fond numérique 2">
+        <img src="bg3.jpg" alt="Fond numérique 3">
     </div>
 
-    <!-- DARK MODE -->
+    <!-- Bouton mode sombre -->
     <div class="dark-toggle" onclick="toggleDarkMode()">🌙</div>
 
-    <!-- TEXTE -->
+    <!-- Texte principal du header -->
     <div class="hero-content">
         <p class="mini-titre">DAVID AZOULAY</p>
         <h1>Mon univers numérique</h1>
@@ -29,52 +38,66 @@
 
 </header>
 
+<!-- Menu burger pour mobile -->
 <div class="burger" id="burger">
     ☰
 </div>
 
+<!-- Menu principal -->
 <nav class="menu-principal" id="menu">
     <a href="index.html">Accueil</a>
     <a href="apropos.html">À propos</a>
+
+    <!-- Page actuelle → class actif -->
     <a href="competences.html" class="actif">Compétences</a>
+
     <a href="projets.html">Projets</a>
     <a href="contact.html">Contact</a>
     <a href="todo.html">Liste de tâches</a>
     <a href="tailwind.html">Univers digital</a>
-
-    
 </nav>
 
+<!-- Contenu principal -->
 <main class="conteneur">
 
-    <!-- AJOUT reveal ICI -->
+    <!-- Carte avec animation au scroll -->
     <section class="carte reveal">
+
         <h2>Mes compétences</h2>
 
+        <!-- Liste des compétences -->
         <ul>
-            <li>Développement web : HTML / CSS</li>
-            <li>Programmation en langage C</li>
-            <li>Électronique : Arduino, capteurs</li>
-            <li>Théorie des graphes et logique algorithmique</li>
-            <li>Conception de projets techniques complets</li>
-            <li>Travail en équipe et gestion de projet</li>
-            <li>Rigueur, autonomie et capacité d’adaptation</li>
+            <li><strong>Développement web :</strong> HTML / CSS / JavaScript / jQuery</li>
+            <li><strong>Programmation :</strong> langage C, algorithmique</li>
+            <li><strong>Électronique :</strong> Arduino, capteurs, systèmes embarqués</li>
+            <li><strong>Informatique :</strong> théorie des graphes, logique algorithmique</li>
+            <li><strong>Projets :</strong> conception et développement complet</li>
+            <li><strong>Soft skills :</strong> travail en équipe, rigueur, autonomie, esprit d’analyse</li>
         </ul>
 
+        <!-- Petit texte explicatif -->
         <p>
             Mes projets m’ont permis de développer à la fois des compétences techniques solides
-            et des qualités essentielles comme la persévérance, l’organisation et l’esprit d’analyse.
+            et des qualités essentielles comme la persévérance, l’organisation et la capacité
+            à résoudre des problèmes concrets.
         </p>
+
     </section>
 
 </main>
 
+<!-- Pied de page -->
 <footer class="footer">
     <p>© 2026 - BY David Azoulay</p>
 </footer>
 
+<!-- Import jQuery -->
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+<!-- Script interactions (menu burger, accordéon…) -->
 <script src="jquery.js"></script>
+
+<!-- Script animations + dark mode -->
 <script src="animations.js"></script>
 
 </body>

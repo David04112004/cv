@@ -1,41 +1,54 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
+    <!-- Encodage pour afficher correctement les accents -->
     <meta charset="UTF-8">
+
+    <!-- Permet au site d’être responsive (adapté mobile) -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Titre de la page dans l’onglet -->
     <title>Accueil - Mon univers numérique</title>
+
+    <!-- Lien vers le fichier CSS (v=999 évite le cache navigateur) -->
     <link rel="stylesheet" href="style.css?v=999">
 </head>
 
 <body>
 
+<!-- ===== HEADER ===== -->
 <header class="hero">
 
-    <!-- SLIDER -->
+    <!-- SLIDER d’images en arrière-plan -->
     <div class="slider">
-        <img src="bg1.jpg">
-        <img src="bg2.jpg">
-        <img src="bg3.jpg">
+        <img src="bg1.jpg"> <!-- première image -->
+        <img src="bg2.jpg"> <!-- deuxième image -->
+        <img src="bg3.jpg"> <!-- troisième image -->
     </div>
 
-    <!-- DARK MODE -->
+    <!-- Bouton pour activer/désactiver le mode sombre -->
     <div class="dark-toggle" onclick="toggleDarkMode()">🌙</div>
 
-    <!-- TEXTE -->
+    <!-- Contenu texte du header -->
     <div class="hero-content">
-        <p class="mini-titre">DAVID AZOULAY</p>
-        <h1>Mon univers numérique</h1>
-        <p class="sous-titre">Portfolio et projets</p>
+        <p class="mini-titre">DAVID AZOULAY</p> <!-- nom -->
+        <h1>Mon univers numérique</h1> <!-- titre principal -->
+        <p class="sous-titre">Portfolio et projets</p> <!-- sous-titre -->
     </div>
 
 </header>
 
+<!-- ===== MENU BURGER (mobile) ===== -->
 <div class="burger" id="burger">
-    ☰
+    ☰ <!-- icône burger -->
 </div>
 
+<!-- ===== MENU PRINCIPAL ===== -->
 <nav class="menu-principal" id="menu">
+
+    <!-- class actif = page actuelle -->
     <a href="index.html" class="actif">Accueil</a>
+
     <a href="apropos.html">À propos</a>
     <a href="competences.html">Compétences</a>
     <a href="projets.html">Projets</a>
@@ -45,28 +58,43 @@
 
 </nav>
 
+<!-- ===== CONTENU PRINCIPAL ===== -->
 <main class="conteneur">
 
+    <!-- Carte avec animation (classe reveal) -->
     <section class="carte reveal">
+
         <h2>Bienvenue</h2>
+
+        <!-- Texte de présentation -->
         <p>
             Bienvenue sur mon site personnel. Vous y trouverez une présentation de mon parcours,
             de mes compétences et des projets que j’ai réalisés au cours de ma formation.
         </p>
+
         <p>
             Ce portfolio met en avant mon intérêt pour le développement web,
             la transformation digitale et l’innovation.
         </p>
+
     </section>
 
 </main>
 
+<!-- ===== FOOTER ===== -->
 <footer class="footer">
     <p>© 2026 - David Azoulay</p>
 </footer>
 
+<!-- ===== SCRIPTS ===== -->
+
+<!-- Import de jQuery (obligatoire avant jquery.js) -->
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+<!-- Script jQuery (menu burger, accordéon, carousel…) -->
 <script src="jquery.js"></script>
+
+<!-- Script animations (scroll + dark mode) -->
 <script src="animations.js"></script>
 
 </body>
